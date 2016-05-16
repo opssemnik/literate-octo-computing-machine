@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main() {
-
-	FILE *arquivo;
+int main(int argc, char *argv[]) {  		
+	if(argc < 2) return 1;			// caso número de argumentos seja < 2 retornará a 1.
+	FILE *arquivo;				
 	int c;
 
     int cl = 0;
@@ -10,7 +10,7 @@ int main() {
     int cp = 0;
     char ch;
 
-	arquivo = fopen("fatorial.c", "r");
+	arquivo = fopen(argv[1], "r");		
 
 	c = getc(arquivo);
     while( c != -1 )
