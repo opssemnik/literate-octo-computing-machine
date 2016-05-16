@@ -12,12 +12,10 @@ int main()
         s[j] = 0;
     }
 
-    // TODO: ler de arquivo!
     s['A']++;
     s['B']++;
     s['A']++;
 
-    //
 
     for( j = 0 ; j < SIZE ; j++ ) {
         total += s[j];
