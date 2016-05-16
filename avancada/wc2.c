@@ -21,7 +21,7 @@ int main() {
         if (c == ' ' && c != ch){
             cp = cp + 1;
 	}
-         	    ch = c;	
+         ch = c;	
 		printf("%i %c %x\n", c, c, c);
 		c = getc(arquivo);
 	}
